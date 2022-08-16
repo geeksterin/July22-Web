@@ -1,0 +1,14 @@
+ length
+ push()
+ pop()
+ shift()
+ unShift()
+ indexOf()
+ lastIndexOf()
+ includes()
+ forEach()
+ every()
+ some()
+ join()
+ concat()
+ 
