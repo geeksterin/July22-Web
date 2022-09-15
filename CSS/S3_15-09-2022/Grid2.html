@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        height: 500px;
+        width: 1000px;
+
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+      }
+      .box {
+        text-align: center;
+        color: white;
+      }
+      .box1 {
+        background-color: black;
+        /* grid-column: 1 / span 2;
+        grid-row: 1 / span 2; */
+        /* grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3; */
+
+        grid-column: 1 / 3;
+        grid-row: 1 /3;
+      }
+      .box2 {
+        background-color: peru;
+        /* grid-column: 3 / 4;
+        grid-row: 1 / 3; */
+      }
+      .box3 {
+        background-color: orangered;
+      }
+      .box4 {
+        background-color: green;
+      }
+      .box5 {
+        background-color: yellowgreen;
+      }
+      .box6 {
+        background-color: darkgrey;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">Box 1</div>
+      <div class="box box2">Box 2</div>
+      <div class="box box3">Box 3</div>
+      <div class="box box4">Box 4</div>
+      <div class="box box5">Box 5</div>
+      <div class="box box6">Box 6</div>
+    </div>
+  </body>
+</html>
