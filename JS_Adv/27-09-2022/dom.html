@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function change_h2_Text() {
+        //get the reference of h2 element
+        var h2 = document.getElementById("h2Id");
+        var p = document.getElementById("p1");
+
+        //chnage the content of h2 element using innerText Property
+        h2.innerText = "Hello JS, you are easy to understand";
+        p.innerText = "I am Programming Language";
+      }
+    </script>
+    <style>
+      body {
+        background-color: lightcoral;
+      }
+      h2 {
+        color: white;
+      }
+      #content {
+        background-color: lightseagreen;
+        width: 500px;
+        margin: 100px auto;
+        padding: 50px;
+        box-shadow: 0 0 10px black;
+        text-align: center;
+      }
+      #list {
+        background-color: lightgreen;
+        width: 500px;
+        margin: 100px auto;
+        padding: 50px;
+        box-shadow: 0 0 10px black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <h2 id="h2Id">Hello HTML, You are Awesome</h2>
+      <p id="p1">I am Markup Language</p>
+      <button onclick="change_h2_Text()">Change Content</button>
+    </div>
+
+    <div id="list">
+      <h3>HTML Topics</h3>
+      <ul>
+        <li>Elements</li>
+        <li>Attributes</li>
+        <li>Iframe</li>
+        <li>Forms</li>
+      </ul>
+      <button>Change Topics</button>
+    </div>
+  </body>
+</html>

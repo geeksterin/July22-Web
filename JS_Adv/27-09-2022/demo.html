@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function myDoc() {
+        console.log(document);
+        console.log("Welcome to DOM in JS");
+        //How to get the reference of any html element
+        var h2Ref = document.getElementById("h2Id");
+
+        //changing the value of innerText
+        h2Ref.innerText = "Hello JS";
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <div>
+        <h2 id="h2Id">JS Introduction</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum saepe
+          neque soluta, dolores id debitis doloribus assumenda! Officiis,
+          perspiciatis. Distinctio iure porro, mollitia repudiandae soluta sint
+          earum ea quod reiciendis obcaecati corporis et cum ex magni
+          reprehenderit sapiente sequi harum. Quas ex voluptate cum mollitia,
+          eligendi repellat temporibus! Dolore, officiis?
+        </p>
+        <button onclick="myDoc()">Call Function</button>
+      </div>
+      <div>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JS</li>
+          <li>React</li>
+          <li>Node</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

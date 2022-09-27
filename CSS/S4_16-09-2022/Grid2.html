@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .container {
+        height: 600px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 100px;
+        grid-template-rows: 50px 200px 300px 50px;
+        grid-gap: 10px;
+      }
+      .box {
+        text-align: center;
+        color: white;
+      }
+      .box1 {
+        background-color: darkgoldenrod;
+        grid-column: 1 / 5;
+      }
+      .box2 {
+        background-color: darkgreen;
+      }
+      .box3 {
+        background-color: orangered;
+      }
+      .box4 {
+        background-color: red;
+      }
+      .box5 {
+        background-color: grey;
+        grid-column: 4/5;
+        grid-row: 2 /4;
+      }
+      .box6 {
+        background-color: blue;
+        grid-column: 1 /4;
+      }
+      .box7 {
+        background-color: black;
+        grid-column: 1 /5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">Box 1</div>
+      <div class="box box2">Box 2</div>
+      <div class="box box3">Box 3</div>
+      <div class="box box4">Box 4</div>
+      <div class="box box5">Box 5</div>
+      <div class="box box6">Box 6</div>
+      <div class="box box7">Box 7</div>
+    </div>
+  </body>
+</html>
