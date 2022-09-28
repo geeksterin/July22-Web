@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script>
+      function gm() {
+        var h2Ref = document.getElementById("h2");
+        var divRef = document.getElementById("d1");
+
+        h2Ref.innerText = "Good Morning, Kabir";
+        h2Ref.style.color = "white";
+        divRef.style.backgroundColor = "green";
+      }
+
+      function ge() {
+        var h2Ref = document.getElementById("h2");
+        var divRef = document.getElementById("d1");
+        h2Ref.innerText = "Good Evening, Kabir";
+        h2Ref.style.color = "white";
+        divRef.style.backgroundColor = "orange";
+      }
+
+      function gn() {
+        var h2Ref = document.getElementById("h2");
+        var divRef = document.getElementById("d1");
+        h2Ref.innerText = "Good Night, Kabir";
+        h2Ref.style.color = "white";
+        divRef.style.backgroundColor = "peru";
+      }
+    </script>
+    <style>
+      body {
+        background-color: lightgreen;
+        margin: 0;
+      }
+      div {
+        background-color: whitesmoke;
+        width: 500px;
+        margin: 100px auto;
+        padding: 50px;
+        border: 4px solid red;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="d1">
+      <h2 id="h2">Welcome to JS</h2>
+
+      <button onclick="gm()">Good Morning</button>
+      <button onclick="ge()">Good Evening</button>
+      <button onclick="gn()">Good Night</button>
+    </div>
+  </body>
+</html>
