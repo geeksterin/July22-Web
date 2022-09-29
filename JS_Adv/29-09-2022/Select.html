@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function fn(e) {
+        var h2Ref = document.getElementById("h2");
+        switch (e.target.value) {
+          case "HTML":
+            h2Ref.innerText = "HTML is Selected";
+            h2Ref.style.color = "orange";
+            break;
+          case "CSS":
+            h2Ref.innerText = "CSS is Selected";
+            h2Ref.style.color = "blue";
+            break;
+          case "JS":
+            h2Ref.innerText = "JS is Selected";
+            h2Ref.style.color = "lightcoral";
+            break;
+          case "REACT JS":
+            h2Ref.innerText = "React is Selected";
+            h2Ref.style.color = "green";
+            break;
+          case "ANGULAR":
+            h2Ref.innerText = "ANGULAR is Selected";
+            h2Ref.style.color = "orangered";
+            break;
+          case "Select the Technology":
+            h2Ref.innerText = "Nothing is Selected";
+            h2Ref.style.color = "red";
+            break;
+        }
+
+        for (var property in e) {
+          console.log(property);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <select onchange="fn(event)">
+      <option>Select the Technology</option>
+      <option>HTML</option>
+      <option>CSS</option>
+      <option>JS</option>
+      <option>REACT JS</option>
+      <option>ANGULAR</option>
+    </select>
+    <h2 id="h2">Nothing is Selected</h2>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function fnCreateElement() {
+        var h1Ref = document.createElement("h1");
+        var imgRef = document.createElement("img");
+
+        h1Ref.innerText = "h1 element is created";
+        imgRef.src =
+          "https://mechomotive.com/wp-content/uploads/2021/08/Geekster_logo_full-1024x264-1-1.png";
+        imgRef.width = "500";
+        imgRef.height = "300";
+
+        document.getElementById("body").appendChild(h1Ref);
+        document.getElementById("body").appendChild(imgRef);
+      }
+    </script>
+  </head>
+  <body id="body">
+    <button onclick="fnCreateElement()">Create Element</button>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function fnCreatePara() {
+        //  <p>Geekster  </p>
+        var pRef = document.createElement("p");
+        var bodyRef = document.getElementById("body");
+        var inputRef = document.getElementById("input");
+        var inputValue = inputRef.value;
+        pRef.innerText = inputValue;
+
+        bodyRef.appendChild(pRef);
+      }
+    </script>
+  </head>
+  <body id="body">
+    <input type="text" id="input" placeholder="Enter Text" />
+    <button onclick="fnCreatePara()">Submit</button>
+  </body>
+</html>

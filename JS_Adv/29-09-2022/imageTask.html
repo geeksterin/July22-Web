@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      div {
+        text-align: center;
+        margin-top: 100px;
+      }
+    </style>
+    <script>
+      function fnChangeImage(name) {
+        var img = document.getElementById("img");
+        if (name === "js") {
+          img.src =
+            "https://tse3.mm.bing.net/th?id=OIP.BgotsGDf29y10kno47CHOwHaEo&pid=Api&P=0";
+        } else {
+          img.src =
+            "https://itsg-global.com/wp-content/uploads/2016/09/react-js-to-use-or-not-to-use.png";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <img
+        id="img"
+        src="https://tse3.mm.bing.net/th?id=OIP.tiBCmJLK-EdWrAcutmc3FgHaHa&pid=Api&P=0"
+        width="200"
+        height="200"
+      />
+      <br /><br />
+      <button onclick="fnChangeImage('js')">Javascript</button>&nbsp;&nbsp;
+      <button onclick="fnChangeImage('react')">React</button>
+    </div>
+  </body>
+</html>
