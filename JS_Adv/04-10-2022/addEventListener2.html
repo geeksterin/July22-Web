@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      div {
+        width: 500px;
+        margin: 100px auto;
+        box-shadow: 0 0 10px red;
+        text-align: center;
+        padding: 50px;
+        background-color: lightcyan;
+      }
+    </style>
+    <script>
+      function fn() {
+        var buttonRef = document.getElementById("btn");
+
+        buttonRef.innerText = "Click Event Added Dynamically";
+
+        buttonRef.addEventListener("click", function () {
+          document.getElementById("body").style.backgroundColor = "lightgreen";
+        });
+
+        buttonRef.addEventListener("mouseenter", function () {
+          buttonRef.style.borderColor = "red";
+          buttonRef.style.backgroundColor = "red";
+          buttonRef.style.color = "white";
+          buttonRef.style.padding = "10px";
+        });
+
+        buttonRef.addEventListener("mouseleave", function () {
+          buttonRef.style.borderColor = "black";
+          buttonRef.style.backgroundColor = "green";
+          buttonRef.style.color = "white";
+        });
+      }
+    </script>
+  </head>
+  <body id="body" style="height: 1200px; background-color: lightcoral">
+    <div>
+      <button onclick="fn()">With Event</button>
+
+      <button id="btn">Without Event</button>
+    </div>
+  </body>
+</html>

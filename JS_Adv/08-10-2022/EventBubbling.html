@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      div {
+        padding: 50px;
+      }
+      #ggfather {
+        border: 6px solid red;
+      }
+      #grandf {
+        border: 4px dotted orange;
+      }
+      #father {
+        border: 4px solid black;
+      }
+      #son {
+        border: 2px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="ggfather">
+      Grand Grand Father
+      <div id="grandf">
+        Grand Father
+        <div id="father">
+          Father
+          <div id="son">Son</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      //References of divs
+      var GrandGFRef = document.getElementById("ggfather");
+      var FRef = document.getElementById("father");
+      var SonRef = document.getElementById("son");
+
+      //  add click event for all divs
+      GrandGFRef.addEventListener(
+        "click",
+        function (event) {
+          alert("GrandGrandF div is Called");
+        },
+        false
+      );
+
+      FRef.addEventListener(
+        "click",
+        function (event) {
+          alert("Father Div is Called");
+        },
+        false
+      );
+
+      SonRef.addEventListener(
+        "click",
+        function (event) {
+          alert("Son div is Called");
+        },
+        false
+      );
+    </script>
+  </body>
+</html>

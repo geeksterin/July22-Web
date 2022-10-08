@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      div {
+        padding: 50px;
+        border: 2px solid red;
+      }
+      p {
+        padding: 10px;
+        border: 4px solid black;
+      }
+      body {
+        height: 1200px;
+        background-color: lightsalmon;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div">
+      <p id="p1"><button id="btn">Para Clicked</button> yes yes yes</p>
+    </div>
+
+    <script>
+      document.getElementById("btn").addEventListener(
+        "click",
+        function () {
+          alert("button clicked");
+        },
+        true
+      );
+      document.getElementById("p1").addEventListener(
+        "click",
+        function () {
+          alert("Para Clicked");
+        },
+        true
+      );
+      function fn() {
+        alert("Para clicked");
+      }
+      document.getElementById("div").addEventListener(
+        "click",
+        function () {
+          alert("div Clicked");
+        },
+        true
+      );
+      function fn() {
+        alert("Para clicked");
+      }
+    </script>
+  </body>
+</html>

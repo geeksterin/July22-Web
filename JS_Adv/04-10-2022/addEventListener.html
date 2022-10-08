@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      // function callEvent(){
+
+      // }
+    </script>
+  </head>
+  <body>
+    <div>
+      <!-- <button onclick="callEvent()">With Event</button> -->
+
+      <button id="a1">Without Event</button>
+      <p id="p1"></p>
+    </div>
+
+    <script>
+      var btnref = document.getElementById("a1");
+      btnref.addEventListener("click", function () {
+        // alert("Button Clciked");
+        var pRef = document.getElementById("p1");
+        pRef.innerText = "Button Clicked";
+        pRef.style.color = "green";
+        pRef.addEventListener("mouseenter", function () {
+          pRef.style.fontSize = "50px";
+        });
+        pRef.addEventListener("mouseleave", function () {
+          pRef.style.fontSize = "20px";
+        });
+      });
+    </script>
+  </body>
+</html>

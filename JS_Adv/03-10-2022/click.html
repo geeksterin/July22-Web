@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        height: 1200px;
+      }
+      div {
+        width: 500px;
+        padding: 50px;
+        text-align: center;
+        box-shadow: 0 0 10px black;
+        margin: 100px auto;
+      }
+    </style>
+    <script>
+      function changeColor() {
+        setTimeout(function () {
+          document.getElementById("body").style.backgroundColor = "darkred";
+        }, 5000);
+      }
+      function change() {
+        document.getElementById("body").style.backgroundColor = "lightcoral";
+      }
+
+      function fn() {
+        document.getElementById("div").style.backgroundColor = "orangered";
+      }
+      function f1() {
+        document.getElementById("div").style.backgroundColor = "green";
+      }
+      function f2() {
+        document.getElementById("div").style.backgroundColor = "yellow";
+        var inputvalue = document.getElementById("input").value;
+        console.log(inputvalue.length);
+        if (inputvalue.length >= 5 && inputvalue.length < 10) {
+          document.getElementById("body").style.backgroundColor = "lightgreen";
+        } else if (inputvalue.length >= 10) {
+          document.getElementById("body").style.backgroundColor = "black";
+        }
+      }
+    </script>
+  </head>
+  <body id="body" onload="changeColor()">
+    <div id="div" onmouseenter="fn()" onmouseleave="f1()">
+      <input
+        type="text"
+        placeholder="Enter Text"
+        onkeypress="f2()"
+        id="input"
+      />
+      <button onclick="change()">Change Background</button>
+    </div>
+  </body>
+</html>
