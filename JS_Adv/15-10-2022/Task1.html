@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function fnChangeImages() {
+        var imgRef = document.getElementById("img");
+        setInterval(function () {
+          switch (imgRef.alt) {
+            case "html":
+              imgRef.src =
+                "https://th.bing.com/th/id/R.7c9ce23982914d441ced2b38c9f2059b?rik=MIsGEeQBK2SlxA&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2f0%2fO%2fr%2fn%2fh%2fk%2fcss.svg.hi.png&ehk=N5MvHg4ICQxOkpKOBYd9SAo9QBm0UdYnm%2be1YSZrEOw%3d&risl=&pid=ImgRaw&r=0";
+              imgRef.alt = "css";
+              break;
+
+            case "css":
+              imgRef.src =
+                "https://coder.clothing/images/stories/virtuemart/product/javascript-icon.png";
+              imgRef.alt = "js";
+              break;
+
+            case "js":
+              imgRef.src =
+                "https://patch.com/img/cdn20/users/22899462/20170118/021339/styles/raw/public/article_images/reactjs-1484723615-8682.jpg";
+              imgRef.alt = "react";
+              break;
+
+            case "react":
+              imgRef.src =
+                "https://clipground.com/images/html-clipart-image.jpg";
+              imgRef.alt = "html";
+              break;
+          }
+        }, 2000);
+      }
+    </script>
+  </head>
+  <body onload="fnChangeImages()">
+    <div style="text-align: center; margin-top: 50px">
+      <img
+        id="img"
+        src="https://clipground.com/images/html-clipart-image.jpg"
+        width="300"
+        height="300"
+        alt="html"
+      />
+    </div>
+  </body>
+</html>
