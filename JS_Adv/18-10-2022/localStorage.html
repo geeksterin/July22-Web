@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function storeData() {
+        localStorage.setItem("city", "Delhi");
+        localStorage.setItem("country", "India");
+        alert("Inserted Successfully")
+      }
+        function accessData() {
+        var h2City = document.getElementById("city");
+        var h2Country = document.getElementById("country");
+
+        var city = localStorage.getItem("city");
+        var country = localStorage.getItem("country");
+
+        h2City.innerText = "City :" + city;
+        h2Country.innerText = "Country :" + country;
+      }
+      function removeData() {
+        localStorage.removeItem("country");
+        localStorage.removeItem("city");
+        alert(" Removed Succesffuly");
+      }
+
+      function updateData() {
+        localStorage.setItem("city", "Hyderabad");
+        alert("Updated Succesfully");
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h2>Local Storage</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam quas
+        nesciunt accusantium at ad fugit cum nam earum eveniet, vitae fugiat
+        voluptate officiis doloremque repudiandae, aspernatur illum ullam est
+        quidem similique. Maiores aut, numquam tempora quia quos iste incidunt
+        eius alias provident dolorum, laborum accusantium. Suscipit doloribus ab
+        magni minima explicabo qui exercitationem, reiciendis deleniti dolore,
+        blanditiis nulla praesentium ullam fugiat ipsum laborum ea? Quos quo
+        doloremque officiis repudiandae velit, veniam adipisci, corporis sed
+        aliquam mollitia quae? Itaque neque, voluptate architecto laudantium
+        magnam, ipsam beatae suscipit nostrum earum cum nobis ab autem natus
+        delectus voluptatem! Odio velit fugiat maxime excepturi ullam, accusamus
+        corporis, et ad repudiandae autem eos itaque deserunt reprehenderit
+        eveniet blanditiis saepe possimus ipsum voluptate dolore perferendis
+        earum hic? Quia vel ut assumenda voluptas repellat dicta sed vitae
+        numquam ullam! Ipsa ipsum debitis quod temporibus et nulla. Rem
+        reprehenderit, quam ad saepe possimus perspiciatis corporis repellat et,
+        natus dignissimos officiis ducimus quidem voluptatibus! Cumque,
+        distinctio natus! Mollitia praesentium, eaque harum animi dolor a
+        obcaecati quae, est cum, odio quibusdam sit ut illum reiciendis incidunt
+        possimus eveniet voluptatum porro. Reprehenderit tenetur neque
+        consequuntur hic animi repudiandae a corrupti unde deleniti architecto
+        esse eius rem mollitia ex odio veritatis omnis, eos error assumenda in
+        quod deserunt harum distinctio nostrum. Voluptates praesentium, mollitia
+        eligendi temporibus enim quas ipsam illo ducimus odit esse
+        necessitatibus laboriosam amet perferendis minima dolores repellendus
+        perspiciatis sit consectetur, animi corrupti nam earum? Mollitia
+        delectus recusandae ducimus ipsum esse officiis ullam fuga error, in
+        optio non ipsam? Nihil ipsum alias accusantium? Pariatur dignissimos,
+        non beatae sint assumenda molestias placeat odio asperiores doloribus
+        necessitatibus iure ducimus esse accusamus eveniet! Labore nesciunt
+        porro laboriosam dolor saepe corrupti enim, neque dolorum quis id
+        aliquid cumque, debitis at incidunt. Aut voluptatibus quidem ex tempore
+        velit est culpa autem earum, suscipit itaque molestiae?
+      </p>
+
+      <button onclick="storeData()">Store Data in Local Storage</button>
+      <button onclick="accessData()">Access Data from Local Storage</button>
+      <button onclick="removeData()">Remove Data from Local Storage</button>
+      <button onclick="updateData()">Update Data from Local Storage</button>
+       <button onclick="">Clear Data from Local Storage</button>
+
+      <div style="margin-top: 40px">
+        <h2 id="city"></h2>
+        <h2 id="country"></h2>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
