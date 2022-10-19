@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function fn() {
+        var name = document.getElementById("name");
+        var email = document.getElementById("email");
+        var male = document.getElementById("male");
+        var female = document.getElementById("female");
+
+        console.log(male.checked);
+        console.log(female.checked);
+      }
+    </script>
+  </head>
+  <body>
+    <div style="text-align: center; margin-top: 100px">
+      <input id="name" type="text" placeholder="Enter Text" /><br />
+      <input id="email" type="email" placeholder="Enter Email" /><br />
+      <input id="male" type="radio" value="male" name="gender" />Male
+      <input
+        id="female"
+        type="radio"
+        value="female"
+        name="gender"
+      />Female<br />
+      <button onclick="fn()">Submit</button>
+    </div>
+  </body>
+</html>
